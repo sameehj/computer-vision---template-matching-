@@ -1,0 +1,4 @@
+This version corrects the saliency checking parameter in the last version.
+This version has the right interpretation of parms.saliencyThresh, and
+Readme.txt has been correspondingly updated to reflect that change. Also some
+more documentation has been added about parms.varNoise.
