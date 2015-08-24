@@ -15,6 +15,7 @@ marg=radius+parms.coRelWindowRadius;
 % Compute descriptor at every 5 pixels seperation in both X and Y directions
 [allXCoords,allYCoords]=meshgrid([marg+1:5:size(i,2)-marg],...
                                  [marg+1:5:size(i,1)-marg]);
+
 allXCoords=allXCoords(:)';
 allYCoords=allYCoords(:)';
 
