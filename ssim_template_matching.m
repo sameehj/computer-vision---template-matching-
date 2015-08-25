@@ -42,6 +42,27 @@ end
 %% match descriptors 
 fprintf('matching descriptors\n');
 for i=1:length(images)
-    indexPairs{i}=matchFeatures(templateResp',resp{i}','MatchThreshold',1);
+    indexPairs{i}=matchFeatures(templateResp',resp{i}','MatchThreshold',0.01);
 end
 %%
+   templateMatchedPoints = templateDrawCoords(:,indexPairs{i}(:, 1));
+   templateClusters=kmeans(templateMatchedPoints',2);
+   figure;
+   imshow(template);
+   hold on;
+   plot(templateMatchedPoints(1,templateClusters==1),templateMatchedPoints(2,templateClusters==1),'r.','MarkerSize',12);
+
+
+   %%
+for i=1:length(images)
+   matchedPoints = drawCoords{i}(:,indexPairs{i}(:, 2));
+   clusters=kmeans(matchedPoints',2);
+   figure;
+   imshow(seq{i});
+   hold on;
+   plot(matchedPoints(1,clusters==2),matchedPoints(2,clusters==2),'r.','MarkerSize',12);
+   plot(matchedPoints(1,clusters==1),matchedPoints(2,clusters==1),'b.','MarkerSize',12);
+
+
+end
+ %%

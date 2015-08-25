@@ -12,8 +12,8 @@ end
 %% match descriptors for each pair
 for i=1:length(images)
     matches{i} = (siftmatch(templateDescriptors, descriptors{i}));
-   % figure;
-  %  showMatches(double(template)/255,double(seq{i})/255,templateFrames,frames{i},matches{i});
+    figure;
+    showMatches(double(template)/255,double(seq{i})/255,templateFrames,frames{i},matches{i});
 end
 
 %%
