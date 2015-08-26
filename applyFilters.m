@@ -11,9 +11,6 @@ for i=1:length(filters)
             [I_row, I_col] = ind2sub(size(c),I);
             yoffSet = abs(I_row-size(filters{i},1));
             xoffSet =abs( I_col-size(filters{i},2));
-            RGB= insertShape((img),'Rectangle', [xoffSet yoffSet size(filters{i},2) size(filters{i},1)]);
-            figure;
-            imshow(RGB);
             shapes{index}=[xoffSet yoffSet size(filters{i},2) size(filters{i},1)];
             index=index+1;
         end

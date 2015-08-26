@@ -1,4 +1,6 @@
 %% configurations
+addpath(genpath('C:\Users\sam\Documents\MATLAB\final project - template matching\'))
+
 template = imread(['C:\Users\sam\Documents\MATLAB\final project - template matching\Option 2 images\FedEx\template\Logo-FedEx.jpg']);
 images  = dir('C:\Users\sam\Documents\MATLAB\final project - template matching\Option 2 images\FedEx\*.jpg');
 %import images
