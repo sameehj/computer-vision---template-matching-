@@ -38,7 +38,7 @@ function [transformedTemplate,tform]=ransac_transformation(points1,points2,templ
             case 'MATLAB:scriptNotAFunction'
             otherwise
                 transformedTemplate=[];
-tform=[];
+                tform=[];
                     warning('Problem using function.  Assigning a value of 0.');
             
         end
