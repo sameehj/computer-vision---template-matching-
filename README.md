@@ -40,4 +40,4 @@ set the configurations in the configurations.m file as follows: set the path to 
     you can change the set of filters that is created from the given template by changing the inside parameters of the function temlateFilters.m. you can do so by changing the resolution of the angle or the diffrent filter size for each angle.
   
 ###*chnnging the Gaussian:
-  the Gaussian that is applied to the template before the convolution occurs, you can do so by changing the gaussian paramaeters in the file brute_force_template_matching.m.
+	the Gaussian that is applied to the template before the convolution occurs, you can do so by changing the gaussian paramaeters in the file brute_force_template_matching.m.
