@@ -33,8 +33,8 @@ set the configurations in the configurations.m file as follows: set the path to 
 ###changing the convoultion result threshold:
     the convolution result is between -1 and 1. typically you want to aim to 0.6 - 0.7, but with diffrent templates those values can be reduced. you can do so by chaning the parameter to the applyFilters function.
     
- ###changing the set of filters:
+###changing the set of filters:
     you can change the set of filters that is created from the given template by changing the inside parameters of the function temlateFilters.m. you can do so by changing the resolution of the angle or the diffrent filter size for each angle.
   
- ###chnnging the Gaussian:
+###chnnging the Gaussian:
   the Gaussian that is applied to the template before the convolution occurs, you can do so by changing the gaussian paramaeters in the file brute_force_template_matching.m.
