@@ -1,4 +1,17 @@
 # computer-vision---template-matching-
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=========================
+GNU Global Public Licence
+=========================
+
+[![GNU GPL v3.0](http://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl.html)
+
+View official GNU site <http://www.gnu.org/licenses/gpl.html>.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 computer vision project based on matlab for university course project
 
 two diffrent approaches where implemented for finding template matches:
