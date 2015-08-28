@@ -38,4 +38,3 @@ set the configurations in the configurations.m file as follows: set the path to 
   
   ###chnnging the Gaussian:
   the Gaussian that is applied to the template before the convolution occurs, you can do so by changing the gaussian paramaeters in the file brute_force_template_matching.m.
-  
