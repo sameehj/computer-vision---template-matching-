@@ -23,11 +23,14 @@ View official GNU site <http://www.gnu.org/licenses/gpl.html>.
 ## Usage: 
 set the configurations in the configurations.m file as follows: set the path to the template image and the path to the directory where other jpeg/jpg images are, those are the images that contain (or don't) the template in them. next you need to run one of two files: sift_template_matching.m or brute_force_template_matching.m.
 
+
 ##setting sift_template_matching.m configurations for better results:
+
   
 ###changing the RANSAC threshhold and number of iterations:
     you can do so by changing the ransac_transformation parameters.
     
+
 ##setting brute_force_template_matching.m configurations for better results:
     
 ###changing the convoultion result threshold:
