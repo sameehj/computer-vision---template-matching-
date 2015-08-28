@@ -22,4 +22,24 @@ two diffrent approaches where implemented for finding template matches:
     2.4 searching for values that are above a given threshhold, those are the matches.
   
   Usage:
-    make the configurations in the configurations.m file as follows: set the path to the template image and the path to the directory where other jpeg/jpg images are, those are the images that contain (or don't) the template in them. next you need to run one of two files: sift_template_matching.m or brute_force_template_matching.m.
+    set the configurations in the configurations.m file as follows: set the path to the template image and the path to the directory where other jpeg/jpg images are, those are the images that contain (or don't) the template in them. next you need to run one of two files: sift_template_matching.m or brute_force_template_matching.m.
+
+  setting sift_template_matching.m configurations for better results:
+  
+  changing the RANSAC threshhold and number of iterations:
+    you can do so by changing the ransac_transformation parameters.
+    
+    setting brute_force_template_matching.m configurations for better results:
+    
+  changing the convoultion result threshold:
+    the convolution result is between -1 and 1. typically you want to aim to 0.6 - 0.7, but with diffrent templates those values can be reduced. you can do so by chaning the parameter to the applyFilters function.
+    
+  changing the set of filters:
+    you can change the set of filters that is created from the given template by changing the inside parameters of the function temlateFilters.m. you can do so by changing the resolution of the angle or the diffrent filter size for each angle.
+  
+  chnnging the Gaussian that is applied to the image before the convolution occurs, you can do so by changing the gaussian paramaeters in the file brute_force_template_matching.m.
+  
+
+  
+
+  
