@@ -1,10 +1,11 @@
-function [ shapes  ] = applyFilters( filters,img,threshhold )
+function [ shapes,indexes  ] = applyFilters( filters,img,threshhold )
 %APPLYFILTERS Summary of this function goes here
 %   Detailed explanation goes here
 shapes=[];
+indexes=[];
 index=1;
 for i=1:length(filters)
-    if(size(filters{i})<size(img))
+    if(size(filters{i})<=size(img))
         c = normxcorr2(filters{i},img);
         [value,I]=max(c(:));
         if(value>threshhold)
@@ -12,6 +13,7 @@ for i=1:length(filters)
             yoffSet = abs(I_row-size(filters{i},1));
             xoffSet =abs( I_col-size(filters{i},2));
             shapes{index}=[xoffSet yoffSet size(filters{i},2) size(filters{i},1)];
+            indexes{index}=i;
             index=index+1;
         end
     end

@@ -1,0 +1,9 @@
+function [ videoFrame ] = insertImage( videoFrame,replacement, rectangle,size,angel )
+%INSERTIMAGE Summary of this function goes here
+%   Detailed explanation goes here
+    replacement=imrotate(replacement,angel);
+    replacement=imresize(replacement,size);
+    replacement(:,:,2)=changem(replacement(:,:,2),0,1); % make it red
+    videoFrame(rectangle(2):(rectangle(4)+rectangle(2)),rectangle(1):(rectangle(3)+rectangle(1)),:)=replacement
+end
+

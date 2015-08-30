@@ -2,15 +2,15 @@
 configurations;
 
 %% create the template filter
-
+template=imresize(template,0.3);
 filters=templateFilters(rgb2gray(template));
 
 %%
-G = fspecial('gaussian',[6 6],2.2);
+G = fspecial('gaussian',[6 6],2);
 index=1;
 %# Filter it
-for i=1:length(images)
-    rectangle=applyFilters(filters,imfilter(rgb2gray(seq{i}),G,'same'),0.60);
+for i=2:length(images)
+    rectangle=applyFilters(filters,imfilter(rgb2gray(imresize(seq{i},0.4)),G,'same'),0.35);
     for j=1:length(rectangle)
         RGB= insertShape((seq{i}),'Rectangle', rectangle{j});
         figure;
