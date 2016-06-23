@@ -12,7 +12,6 @@ function [im_1d, alpha, im_sub] = select_back(im_in,rect)
 %
 % Author:
 %   Xiuming Zhang
-%   xiuming6zhang[on]gmail.com
 %   Dept. of ECE, National University of Singapore
 %   April 2015
 %

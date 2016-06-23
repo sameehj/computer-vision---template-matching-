@@ -11,7 +11,6 @@ function rgb = get_rgb_double(im, x, y)
 %
 % Author:
 %   Xiuming Zhang
-%   xiuming6zhang[on]gmail.com
 %   Dept. of ECE, National University of Singapore
 %   April 2015
 %

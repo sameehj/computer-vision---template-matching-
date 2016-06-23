@@ -10,7 +10,6 @@ function D_min = compute_unary(rgb_pt, gmm_params)
 %
 % Author:
 %   Xiuming Zhang
-%   xiuming6zhang[on]gmail.com
 %   Dept. of ECE, National University of Singapore
 %   April 2015
 %

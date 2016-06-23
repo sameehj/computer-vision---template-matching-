@@ -10,7 +10,6 @@ function im_out = grabcut(im_in, gamma,rect)
 %
 % Author:
 %   Xiuming Zhang
-%   xiuming6zhang[on]gmail.com
 %   Dept. of ECE, National University of Singapore
 %   April 2015
 %
